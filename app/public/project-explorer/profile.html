@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Profile</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="index.html">Project Explorer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="form-inline" name="searchForm">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">  
+                <a class="nav-link" href="index.html">Submit</a>
+              </div>
+              <div class="navbar-nav ml-auto">
+                <a class="nav-link" href="register.html">Sign up</a>
+                <a class="nav-link" href="login.html">Login</a>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container w-75">
+                <div class="mt-4 mb-3">
+                    <h3 class="d-inline">Micah Onyedikachi Tobias</h3>  <p class="text-muted d-inline">micaht@edconnect.ng</p>
+                </div>
+                <div class=" row bg-light">
+                    <div class="col-sm-4 mt-4 mb-3">
+                        <span class="d-block">Program </span> <span class="d-block">Computer Science</span>
+                    </div>
+                    <div class="col-sm-4 mt-4 mb-3">
+                        <span class="d-block">Matriculation Number </span> <span class="d-block">00/0000</span>
+                    </div>
+                    <div class="col-sm-4 mt-4 mb-3">
+                        <span class="d-block">Graduation Year: </span> <span class="d-block">2019</span>
+                    </div>    
+                        
+                        
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="mx-auto w-75 mt-4 mb-4">
+                <h3>Update Profile</h3>
+                <hr>
+            </div>
+            <div class="mx-auto w-50 mt-4 mb-4">
+                <form name="updateProfile">
+                    <form action="">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control" name="firstName">
+                            </div>    
+                            <div class="form-group col-md-6">
+                                <label for="lastName">Last Name </label>
+                                <input type="text" class="form-control" name="lastName">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" name="email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="">Program</label>
+                                <select class="form-control" name="program" id="program">
+                                    <option value="">Choose...</option>
+                                    <option value="computer_science">Computer Science</option>
+                                    <option value="computer_information_systems">Computer Information Systems</option>
+                                    <option value="computer_technology">Computer Technology</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="matricNumber">Matriculation Number </label>
+                                <input type="text" class="form-control" name="matricNumber">
+                            </div>
+                            <div class="form-group col-md-6">
+                            <label  for="">Graduation Year</label>
+                                <select class="form-control" name="graduationYear" id="graduationYear">
+                                    <option value="">Choose...</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Update Profile</button>
+                    </form>
+            </div>
+            
+        </section>
+        <section>
+            <div class="mx-auto w-75 mt-4 mb-4">
+                <h3>Change Password</h3>
+                <hr>
+            </div>
+            <form  name="changePassword" class="mx-auto w-50 mt-4 mb-4">
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label>Current Password:</label>
+                        <input class="form-control " type="password" name="currentPassword">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>New Password:</label>
+                        <input class="form-control" type="password" name="newPassword">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Confirm Password:</label>
+                        <input class="form-control" type="password" name="confirmPassword">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Update Profile</button>
+            </form>
+        </section>
+    </main>
+
+    <br>
+    <br>
+    <footer>
+        <div class="text-right text-muted p-3 bg-light">
+            Project Explorer © 2020.  <a class="text-dark">Edconnect</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Edit Project</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="index.html">Project Explorer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="form-inline" name="searchForm">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">  
+                <a class="nav-link" href="index.html">Submit</a>
+              </div>
+              <div class="navbar-nav ml-auto">
+                <a class="nav-link" href="register.html">Sign up</a>
+                <a class="nav-link" href="login.html">Login</a>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container mx-auto w-75">
+                <div class="mt-4 mb-3">
+                    <h3 class="d-inline">Micah Onyedikachi Tobias</h3>
+                </div>
+            
+                <div class="row bg-light d-flex justify-content-around">
+                    <div class="col-sm-3 mt-4 mb-3">
+                        <span class="d-block">Created By </span> <span class="d-block">Ade Chris</span>
+                    </div>
+                    <div class="col-sm-3 mt-4 mb-3">
+                        <span class="d-block">Date Created </span> <span class="d-block">2021-03-23</span>
+                    </div>
+                    <div class="col-sm-3 mt-4 mb-3">
+                        <span class="d-block">Last Updated</span> <span class="d-block">2021-03-23</span>
+                    </div>
+                    <div class="col-sm-3 mt-4 mb-3">
+                        <button type="submit" class="btn btn-primary mb-3">View Project</button>
+                    </div>         
+                </div>
+            </div>
+            <div class="container mx-auto w-75 row">
+                <div class="col-md-6">
+                    <div class=" mt-4 mb-4">
+                        <h5>Update Profile</h5>
+                        <hr>
+                    </div>
+                    <form action="" name="submitProject">
+                        <div class="mb-3 mt-4 mb-3">
+                            <label for="name" class="form-label">Project name</label>
+                            <input type="text" class="form-control" name="name" placeholder="Project 1">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="abstract" class="form-label">Project Abstract</label>
+                            <textarea class="form-control" name="name" cols="30" rows="5" placeholder="Project 1 is a very interesting project"></textarea>
+                        </div>
+            
+                        <div class="mb-3">
+                            <label for="authors" class="form-label">Author(s)</label>
+                            <input type="text" class="form-control" name="authors" placeholder="Micah Tobias">
+                        </div>
+            
+                        <div class="mb-3">
+                            <label for="tags" class="form-label">Tag(s)</label>
+                            <input type="text" class="form-control" name="tags" placeholder="#web">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div class="mt-4 mb-4">
+                        <h5>Manage Project Files</h5>
+                        <hr>
+                    </div>
+                    <form action="" name="submitProject">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="card">
+                        <div class="card-header">
+                                Project Files
+                            </div>
+                            <div class="card-body text-center">
+                                <p>No file uploaded yet</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <br>
+    <br>
+    <footer>
+        <div class="text-right text-muted p-3 bg-light">
+            Project Explorer © 2020.  <a class="text-dark">Edconnect</a>
+        </div>
+    </footer>
+</body>
+</html>
